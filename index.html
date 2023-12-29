@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expenditure Tracker</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+
+      <div class="container">
+
+        <h2 class="heading1">Expenditure</h2>
+        <h2 class="heading2">Tracker</h2>
+        <img src="Images/Screenshot 2022-06-25 at 4.24.05 PM.png" alt="" />
+      </div>
+
+      <div class="container">
+        <h4>Current Balance</h4>
+        <h1 id="balance">Rs 00.00</h1>
+
+        <div class="inc-exp-container">
+          <div>
+            <h4>INCOME</h4>
+            <p id="money-plus" class="money-plus">+ Rs 00.00</p>
+          </div>
+
+          <div>
+            <h4>EXPENSE</h4>
+            <p class="money-minus" id="money-minus">- Rs 00.00</p>
+          </div>
+        </div>
+
+        <h3>History of Expenditure</h3>
+        <ul id="list" class="list"></ul>
+
+        <h3>Add New Transition</h3>
+        <form id="form">
+          <div class="form-control">
+            <label for="text">Text</label>
+            <input type="text" id="text" placeholder="Type of Expense..." />
+          </div>
+          <div class="form-control">
+            <label for="amount">Amount<br />
+            (- expense ,+ income )</label>
+            <input type="number" id="amount" placeholder="Enter amount..." />
+          </div>
+          <button class="btn">Add transaction</button>
+        </form>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
